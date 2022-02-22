@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.nutraj.com	TRUE	/	FALSE	1999999999	PHPSESSID	24ntt0uf66hudg86d1j669paf2
+www.nutraj.com	TRUE	/	FALSE	1999999999	language	en-gb
+www.nutraj.com	TRUE	/	FALSE	1999999999	currency	INR
+.google.com	TRUE	/	FALSE	1999999999	NID	511=is2ymFLsd-YEvHjz354V2NEivadSnBmXcJWLdrH7Ts6dfzZ0scndmYese-zh8E8igfmlD5_CWaggooNQOFFKh4f3AHy0JXpNq43NBnPgEHgJe97ADF92Ua580_ATodZgvKL_Srnpc8ZqDeAWIdt8FANPIx02mcG5RReJgQOd694
+www.nutraj.com	TRUE	/	FALSE	1999999999	kartify	fbibad6r8f3os4nungggicskjl
+www.nutraj.com	TRUE	/	FALSE	1999999999	samesite	None
+

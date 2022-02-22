@@ -1,0 +1,71 @@
+#input-register-passShowHide {
+    position: absolute !important;
+    right: 5px;
+    background: none;
+    border: 0;
+    top: 33px;
+    font-size: 14px;
+    outline: 0;
+    color: #4c73fd;
+}
+#input-register-emailpassShowHide {
+    position: absolute !important;
+    right: 5px;
+    background: none;
+    border: 0;
+    top: 33px;
+    font-size: 14px;
+    outline: 0;
+    color: #4c73fd;
+}
+.input-register-resend-superdry {
+    right: 12px ! important;
+    top: 10px ! important;
+}
+.pos_rel {
+    position:relative;
+}
+#input-register-counter {
+    position: absolute !important;
+    right: 5px;
+    background: none;
+    border: 0;
+    top: 33px;
+    font-size: 14px;
+    outline: 0;
+    cursor:default;
+}
+#input-register-email-counter {
+    position: absolute !important;
+    right: 5px;
+    background: none;
+    border: 0;
+    top: 33px;
+    font-size: 14px;
+    outline: 0;
+    cursor:default;
+}
+.btn-danger[disabled] {
+    background-color: #d2c7c7;
+    border-color: #f2f2f2;
+}
+#input-register-mobile-number{
+    background: none;
+    border: 0;
+    font-size: 13px;
+    float: right;
+    color: #4c73fd;
+}
+#input-register-email-id {
+    background: none;
+    border: 0;
+    font-size: 13px;
+    float: right;
+    color: #4c73fd;
+}
+.text-success {
+    font-size:13px;
+}
+.key-icon{
+    width:auto !important;
+}
