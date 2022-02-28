@@ -11,6 +11,9 @@
 </head>
 <body class="checkout-cart no-box-type-7 border-width-0 body-other    body-header-type- checkout-cart">
    <style>
+       body{
+    background:url(../images/whiteleave.jpeg);
+  }
            @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

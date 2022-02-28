@@ -10,7 +10,7 @@ class Home extends CI_Controller
 		$this->load->library('form_validation');
         $this->load->library('session');
         $this->load->library('email');
-        //$this->load->helper('security');
+        $this->load->helper('security');
 
 	}
 		

@@ -71,15 +71,16 @@ span#wishlist-total{
      </style> 
   <!-- FOOTER-->
   <div class="footer full-width">
+    
     <div class="background-footer"></div>
     <div class="background">
       <div class="shadow"></div>
       <div class="pattern">
         <div>         
           
-     <div class="advanced-grid advanced-grid-111437040 Footer " style="margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;">
+     <div class="advanced-grid advanced-grid-111437040 Footer " style=" margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;">
       <div>               
-        <div class="container" style="background-color: white;">
+        <div class="container" style="background:url(../images/whiteleave.jpeg);">
           <div style="padding-top: 15px;padding-left: 0px;padding-bottom: 15px;padding-right: 0px;">
             <div class="row">
                 <div class="col-sm-3">
@@ -115,7 +116,7 @@ span#wishlist-total{
     <?php if($categories){ 
         foreach($categories as $c){
     ?>
-    <li><a href="<?php echo base_url('products/'.$c['cat_id']); ?>"><?php echo $c['cat_name']; ?></a></li>
+    <li style="font-weight:bold;"><a href="<?php echo base_url('products/'.$c['cat_id']); ?>"><?php echo $c['cat_name']; ?></a></li>
     <?php } } ?>
  </ul>    
 </div>
@@ -186,7 +187,7 @@ span#wishlist-total{
 
 <div class="row" style="border-top:1px solid black;">                                   
   <div class="col-sm-12">
-  <div class="text-center powered-by " style="color: #000;"><i class="fa fa-copyright"></i>Powered by <a href="https://iclickstech.com/" target="_blank">Infinite-E Clicks Technologies Pvt. Ltd.</a></div>
+  <div class="text-center powered-by " style="color: #000;"><i class="fa fa-copyright"></i> Powered by <a href="https://ekwikdigital.com/" target="_blank"> Ekwik Digital</a></div>
 
 <a href="javascript:" id="return-to-top" style="background-color:Tomato;"><div id="scrollUp" style="display: block;">
             <i class="fa fa-rocket"></i>

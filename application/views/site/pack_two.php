@@ -49,6 +49,9 @@ header{
 .mega-menu-modules ul.megamenu>li>a {
     padding: 15px 0px;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 ul.megamenu .megamenu-label {
     top: -8px;
 }
@@ -609,13 +612,22 @@ header .search-bar{
   {
       width:280px;
   }
+  .homebg{
+  background:url(../images/whiteleave.jpeg);
+}
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .homebg{
+  background:url(../images/whiteleave.jpeg);
+}
 }
 @media only screen and (min-width: 1200px) {
   .pro-zoom{ width:50%; }
+  .homebg{
+  background:url(../images/whiteleave.jpeg);
+}
   #add_this123
 {
     margin-top:-44px;
@@ -627,10 +639,13 @@ header .search-bar{
     margin-right: 5px;
     margin-left: 5px;
 }
+.homebg{
+  background:url(../images/whiteleave.jpeg);
+}
 
   </style>
  </head>
-<body class="product-product-390089 no-box-type-7 border-width-0 body-other    body-header-type- product-product">
+<body class="homebg product-product-390089 no-box-type-7 border-width-0 body-other    body-header-type- product-product">
  <!--  <div class="loader_bg">
     <div class="loader"></div>
 </div> -->
@@ -665,19 +680,19 @@ header .search-bar{
   </div>
       </div>
     </nav>
-  <div class="header-notice" style="background-color: white;color: black;">
+  <!-- <div class="header-notice" style="background-color: white;color: black;">
 <center style="padding: 10px; border-bottom: 1px solid black;"><i class="fa fa-map-marker"></i> Office 107, Plot No. 4-5, Radhika Premier Building, Main Road Mahalaxmi Nagar, Near Canara bank, Indore (M.P.) 452010</center>
-</div>
+</div> -->
 <div id="mobile-search">
 	<i class="fa fa-search" style="color:black;margin-top:15px;"></i>
 </div>
     <header>
-  <div class="container-fluid header-container">
+  <div class="homebg container-fluid header-container" style="margin-top:-10px; background:url(../images/whiteleave.jpeg);">
     <div class="row">
   <div class="col-sm-3 header-left">
       <div id="logo">
                 <a href="<?php echo base_url(); ?>">
-                 <img src="<?php echo base_url();?>image/resize-164310701455515656KWBpngtransparent1.png" title="" alt="" class="img-responsive"  />
+                 <img src="<?php echo base_url();?>image/logoss.png" title="" alt="" class="img-responsive" style="height:100px; width:150px;" />
         </a>
               </div>
   </div>
@@ -775,7 +790,7 @@ header .search-bar{
     <div class="megamenu-wrapper">
     <div class="megamenu-pattern">
       <div class="container">
-         <ul class="megamenu slide" style="display:flex;justify-content: center;">
+         <ul class="megamenu slide" style="display:flex;justify-content: space-evenly; background-color:black;">
         <?php $head1 = $this->common_model->get_categories_top(); 
                foreach($head1 as $h)
                { $sub = $this->common_model->get_subcategory($h['cid']); 
@@ -786,7 +801,7 @@ header .search-bar{
             <?php if(sizeof($sub)>0){  ?>
              
             <li class="with-sub-menu hover"><p class="close-menu"></p><p class="open-menu"></p>
-         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a>
+         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong style="color:white;"><?php echo $h['cat_name']; ?></strong></span></a>
         <div class="sub-menu " style="width: 300px; right: auto;"><div class="content"><p class="arrow" style="left: 36px;"></p><div class="row"><div class="col-sm-12  mobile-enabled"><div class="row"><div class="col-sm-12 hover-menu">
             <div class="menu">
                 <ul>
@@ -805,7 +820,7 @@ header .search-bar{
             <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a></li>
             <?php }  }?>
         
-            <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li>
+            <!-- <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li> -->
             
                 <li class="mobile-menu-close"><p class="close-menu"></p>
                 <p class="open-menu mobile-disabled"></p><a href="" class="clearfix"><span><strong><span>
@@ -1086,11 +1101,11 @@ header .search-bar{
     <!-- chkzipcod start -->
   <style type="text/css">
 /*Panel Css*/
-.mypanel_chkzipcod{background:#fff}
+.mypanel_chkzipcod{}
 .panel1{width:100%;}
 .panel2{min-width:245px;width:245px}
 .panel1 .panel1head{color:#666;font-size:14px;text-align:left;margin:0}
-.panel1 .panel1body{padding:10px 0px 10px 0px;background:#fff}
+.panel1 .panel1body{padding:10px 0px 10px 0px;}
 /*Button and textnox css*/
 .btnshpinschk{background-color:#4CAF50;border:none;color:#fff;padding:10px 30px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer; border-radius:5px;}
 .btnshpinschk:hover{

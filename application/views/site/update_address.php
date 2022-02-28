@@ -20,6 +20,9 @@
 </p>
 </div> -->
    <style>
+     body{
+    background:url(../images/whiteleave.jpeg);
+  }
            @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

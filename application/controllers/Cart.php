@@ -11,6 +11,7 @@ class Cart extends CI_Controller
         $this->load->library('session');
         $this->load->library('email');
         $this->load->library("cart");
+        $this->load->helper('security');
         require_once('application/libraries/Instamojo.php');
 
 	}

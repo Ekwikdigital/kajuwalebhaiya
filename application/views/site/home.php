@@ -1,4 +1,6 @@
+<link rel="shortcut icon" href="image/logoss.png" type="image/x-icon"/>
 <?php include ("include/header.php") ?>
+
 
 <style>
 
@@ -24,6 +26,10 @@
 }
 }
 #column_left .box-no-advanced .products .product .sale, #column_left .box-no-advanced .products .product .new{ display: block;}
+body{
+  background-image:url(images/whiteleave.jpeg);
+  /* background-color:white; */
+}
 .sidenav {
   height: 120%;
   width: 0;
@@ -121,24 +127,25 @@ margin-left: 0 !important;
 	}
 }
 .image-box {
-    width:400px;
-    height:350px;
+    /* width:400px;
+    height:350px; */
     overflow: hidden;
     border-radius: 15px;
     margin:15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
 }
 .image-box img {
-    width:400px;
-    height:350px;
-    transition: all 0.3s;
+    width:410px;
+    height:360px;
     display: block;
 
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
-.image-box:hover img {
-    transform: scale(1.2);
+.image-box:hover  {
+  box-shadow: 5px 5px 15px black;
+    transform: scale(1.05);
 }
 @media (hover: none) {
 .image-box:hover img{ transform: none; }
@@ -197,7 +204,7 @@ margin-left: 0 !important;
 
 
 .price1 {
-  color: #00e6b8;
+  color: #006400;
   font-size: 22px;
   padding: 17px;
 }
@@ -207,7 +214,7 @@ margin-left: 0 !important;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #00e6b8;
+  background-color: #006400;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -384,6 +391,11 @@ select:not(:-internal-list-box) {
     .testimonial .title{ font-size: 12px; }
     .testimonial .post{ font-size: 11px; }
 }
+
+
+.icon-responsive{
+  display: flex;
+}
 .rating-stars ul {
   list-style-type:none;
   padding:0;
@@ -429,58 +441,34 @@ margin-left: auto;
     <div class="spinner"></div>
      <div class="camera_wrap carousel-inner" id="camera_wrap_1" style="overflow: hidden; margin: auto; height: px; max-width: px;">
         <div   style="width:100%;"><a href="#" class="">                                                    
-          <img src="images/1.png" data-src="images/1.png"  title="Slider" alt="Slider"
+          <img src="images/fresh.png" data-src="images/fresh.png"  title="Slider" alt="Slider"
                                                          class="lload img-responsive" width="100%" height="550">
           </a>                                                
         </div>
         <div   style="width:100%;">
           <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/2.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
+            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/fresh2.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
           </a>    
         </div>
         <div   style="width:100%;">
           <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/3.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
+            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/fresh.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
           </a>                                                
         </div>
         <div   style="width:100%;">
           <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/1.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
-          </a>                                                
-        </div>
-        <div   style="width:100%;">
-          <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/2.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
-          </a>                                                
-        </div>
-        <div   style="width:100%;">
-          <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/3.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
+            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/fresh2.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
           </a>
         </div>
         <div style="width:100%;">
           <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/1.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
-          </a>                                                
-        </div>
-        <div style="width:100%;">
-          <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/2.png" 
+            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/fresh.png" 
             title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
           </a>                                                
         </div>
-        <div   style="width:100%;"><a href="#" class="">                                                    
-          <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/3.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
-        </a>                                                
-      </div>
-      <div style="width:100%;">
-        <a href="#" class="">                                                    
-          <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/1.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
-        </a>                                               
-        </div>
         <div style="width:100%;">
           <a href="#" class="">                                                    
-            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/2.png" 
+            <img src="images/loader1920x575bfbf.gif?width=&amp;height=&amp;mode=fill&amp;fill=solid&amp;fill-color=FFFFFF" data-src="images/fresh2.png" 
             title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
           </a>                                                
         </div>
@@ -524,7 +512,7 @@ margin-left: auto;
     <div class="modal-content">
         <button type="button" class="close" onclick="setCookie('close-popup-bh', 1, .15);" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-body">
-            <a href="#"><img src="images/deal.png" width="100%" alt="" /></a>
+            <a href="#"><img src="images/popup.png" width="100%" alt="" /></a>
         </div>
     </div>
   </div>
@@ -572,13 +560,13 @@ margin-left: auto;
 if($deal)
 {
 ?>
-<div class="deals-heading" style="font-weight:bold;text-transform:uppercase;">Deal Of The Week </div> 
+<div class="deals-heading" style="font-weight:bold;text-transform:uppercase;width:max-contant;">Deal Of The Week </div> 
 <div class="row banners banners-with-padding-30">
     
 <?php 
     foreach($deal as $d)
     { ?>
-        <div class="col-sm-4 image-box">
+        <div class=" image-box">
           <a href="<?php echo base_url('deal-of-the-week/'.$d['d_order']); ?>">
           <img class="img-responsive" src="<?php echo base_url('images/deal/'.$d['d_image']); ?>" alt="Image">
           </a>
@@ -596,7 +584,7 @@ if($deal)
         {
         ?> 
         
-<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;background-image: url(image/Background.png);">
+<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;">
 <?php if($pack1){ ?>
 <a class="next" href="#myCarousel55678779" id="myCarousel55678779_next" style="background-color:transparent;"><span></span></a>
   <a class="prev" href="#myCarousel55678779" id="myCarousel55678779_prev" style="background-color:transparent;"><span></span></a>
@@ -657,7 +645,7 @@ if($deal)
            <?php $inps= preg_replace('/[^A-Za-z0-9\-]/', ' ', $p['pack_name']);
                         $name=str_replace(' ', '-', strtolower($inps));
                         $new = $name.'-'.$p['pack_product_id'];  ?>
-       <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #00e6b8;padding: 25px;height:90px"><?php echo $p['pack_name']; ?></h1></a>
+       <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color:#006400;padding: 25px;height:90px"><?php echo $p['pack_name']; ?></h1></a>
  <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <img src="<?php echo base_url('thumbnail/'.$p['pack_image']); ?>" style="max-width: 100%;margin:-35px;height: 220px;"></a>
   
  <button type="button" class="wishlist-icon wishlist-add-390089" style="display: none;" data-toggle="tooltip" title="Add to Wish List" onclick=""><i class="fa fa-heart"></i></button>
@@ -694,13 +682,13 @@ if($deal)
                    // $new_price=str_replace(',', '', $price1);
                 ?>
                 
-                <span class="price-new" style="color: #00e6b8" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
+                <span class="price-new" style="color: #006400" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
                 <?php } else{
                     $price1 = $old_price - ($old_price * $discount / 100);
                     $price2= number_format($price1);
                     //$new_price=str_replace(',', '', $price2);
                   ?>
-                  <span class="price-new" style="color: #00e6b8" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
+                  <span class="price-new" style="color: #006400" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
                 <span class="price-old" id="new"><i class="fa fa-inr rs-sym"></i> <?php echo number_format($old_price); ?></span>
                 <span>
                     <span class="sale sale-percentage"><?php echo $discount; ?>% Off</span>
@@ -767,7 +755,7 @@ if($deal)
            <?php $inps= preg_replace('/[^A-Za-z0-9\-]/', ' ', $p['pack_name']);
                         $name=str_replace(' ', '-', strtolower($inps));
                         $new = $name.'-'.$p['pack_product_id'];  ?>
-       <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #00e6b8;padding: 25px;height:90px"><?php echo $p['pack_name']; ?></h1></a>
+       <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #006400;padding: 25px;height:90px"><?php echo $p['pack_name']; ?></h1></a>
  <a href="<?php echo base_url('product/'.$p['pack_product_id']); ?>"> <img src="<?php echo base_url('thumbnail/'.$p['pack_image']); ?>" style="max-width: 100%;margin:-35px;height: 220px;"></a>
   
  <button type="button" class="wishlist-icon wishlist-add-390089" style="display: none;" data-toggle="tooltip" title="Add to Wish List" onclick=""><i class="fa fa-heart"></i></button>
@@ -801,13 +789,13 @@ if($deal)
                     $price1=number_format($old_price);
                    // $new_price=str_replace(',', '', $price1);
                 ?>
-                <span class="price-new" style="color: #00e6b8;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
+                <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
                 <?php } else{
                     $price1 = $old_price - ($old_price * $discount / 100);
                     $price2= number_format($price1);
                     //$new_price=str_replace(',', '', $price2);
                   ?>
-                  <span class="price-new" style="color: #00e6b8;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
+                  <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
                 <span class="price-old" id="new" style="font-size:14px;"><i class="fa fa-inr rs-sym"></i> <?php echo number_format($old_price); ?></span>
                 <span>
                     <span class="sale sale-percentage" style="font-size:14px;"><?php echo $discount; ?>% Off</span>
@@ -873,7 +861,7 @@ if($deal)
             $top1 = $this->common_model->get_top();
             if($top){
         ?>
-<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;background-image: url(image/Background.png);">
+<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;background-image: url(image/);">
     <?php if($top1)
     {
         ?>
@@ -929,7 +917,7 @@ if($deal)
                         <div class="product-layout product-item product-grid">
                                 <div class="product-thumb size-option">
                                <div class="card">
-                               <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #FF7F50;padding: 25px;height:90px"><?php echo $t['p_name']; ?></h1></a>
+                               <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #006400;padding: 25px;height:90px"><?php echo $t['p_name']; ?></h1></a>
                          <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <img src="<?php echo base_url('thumbnail/'.$t['p_image']); ?>"  style="max-width: 100%;margin:-35px;height: 220px;"></a>
                           
                          <button type="button" class="wishlist-icon wishlist-add-390089" style="display: none;" data-toggle="tooltip" title="Add to Wish List" onclick=""><i class="fa fa-heart"></i></button>
@@ -965,13 +953,13 @@ if($deal)
                    // $new_price=str_replace(',', '', $price1);
                 ?>                             
                 
-                <span class="price-new" style="color: #FF7F50;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
+                <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
                 <?php } else{
                     $price1 = $old_price - ($old_price * $discount / 100);
                     $price2= number_format($price1);
                     //$new_price=str_replace(',', '', $price2);
                   ?>
-                  <span class="price-new" style="color: #FF7F50;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
+                  <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
                 <span class="price-old" id="new" style="font-size:14px;"><i class="fa fa-inr rs-sym"></i> <?php echo number_format($old_price); ?></span>
                 <span>
                     <span class="sale sale-percentage" style="font-size:14px;"><?php echo $discount; ?>% Off</span>
@@ -1008,11 +996,11 @@ if($deal)
                 
                     if($carts){ ?>
                         <div class="viewww<?php echo $t['pid']; ?>"></div>
-                        <a href="<?php echo base_url('shopping-cart'); ?>"><button class="buttons" style="background-color: #FF7F50;" class="views<?php echo $t['pid']; ?>">View Cart </button> </a>
+                        <a href="<?php echo base_url('shopping-cart'); ?>"><button class="buttons" style="background-color: #006400;" class="views<?php echo $t['pid']; ?>">View Cart </button> </a>
                     <?php } else if(!$this->session->userdata['u_id']){ ?>
-                    <a href="<?php echo base_url('login'); ?>"><button class="buttons" style="background-color: #FF7F50;" id="cart_button">Add to Cart </button></a>
+                    <a href="<?php echo base_url('login'); ?>"><button class="buttons" style="background-color: #006400;" id="cart_button">Add to Cart </button></a>
                     <?php } else{ ?>
-                     <div class="viewww<?php echo $t['pid']; ?>"><button class="buttons" id="cart_button<?php echo $t['product_id']; ?>" style="background-color: #FF7F50;" onclick="return add_top(<?php echo $t['product_id']; ?>,'<?php echo $t['p_name']; ?>','<?php echo $t['pid']; ?>');">Add to Cart </button></div>
+                     <div class="viewww<?php echo $t['pid']; ?>"><button class="buttons" id="cart_button<?php echo $t['product_id']; ?>" style="background-color: #006400;" onclick="return add_top(<?php echo $t['product_id']; ?>,'<?php echo $t['p_name']; ?>','<?php echo $t['pid']; ?>');">Add to Cart </button></div>
                      <?php } ?>
   
                         </div>
@@ -1036,7 +1024,7 @@ if($deal)
                         <div class="product-layout product-item product-grid">
                                 <div class="product-thumb size-option">
                                <div class="card">
-                               <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #FF7F50;padding: 25px;height:90px"><?php echo $t['p_name']; ?></h1></a>
+                               <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #006400;padding: 25px;height:90px"><?php echo $t['p_name']; ?></h1></a>
                          <a href="<?php echo base_url('product-detail/'.$t['product_id']); ?>"> <img src="<?php echo base_url('thumbnail/'.$t['p_image']); ?>"  style="max-width: 100%;margin:-35px;height: 220px;"></a>
                           
                          <button type="button" class="wishlist-icon wishlist-add-390089" style="display: none;" data-toggle="tooltip" title="Add to Wish List" onclick=""><i class="fa fa-heart"></i></button>
@@ -1072,13 +1060,13 @@ if($deal)
                    // $new_price=str_replace(',', '', $price1);
                 ?>                             
                 
-                <span class="price-new" style="color: #FF7F50;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
+                <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
                 <?php } else{
                     $price1 = $old_price - ($old_price * $discount / 100);
                     $price2= number_format($price1);
                     //$new_price=str_replace(',', '', $price2);
                   ?>
-                  <span class="price-new" style="color: #FF7F50;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
+                  <span class="price-new" style="color: #006400;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
                 <span class="price-old" id="new" style="font-size:14px;"><i class="fa fa-inr rs-sym"></i> <?php echo number_format($old_price); ?></span>
                 <span>
                     <span class="sale sale-percentage" style="font-size:14px;"><?php echo $discount; ?>% Off</span>
@@ -1138,11 +1126,11 @@ if($deal)
                 
                     if($carts){ ?>
                         <div class="viewww<?php echo $t['pid']; ?>"></div>
-                        <a href="<?php echo base_url('shopping-cart'); ?>"><button class="buttons" style="background-color: #FF7F50;" class="views<?php echo $t['pid']; ?>">View Cart </button> </a>
+                        <a href="<?php echo base_url('shopping-cart'); ?>"><button class="buttons" style="background-color: #006400;" class="views<?php echo $t['pid']; ?>">View Cart </button> </a>
                     <?php } else if(!$this->session->userdata['u_id']){ ?>
-                    <a href="<?php echo base_url('login'); ?>"><button class="buttons" style="background-color: #FF7F50;" id="cart_button">Add to Cart </button></a>
+                    <a href="<?php echo base_url('login'); ?>"><button class="buttons" style="background-color: #006400;" id="cart_button">Add to Cart </button></a>
                     <?php } else{ ?>
-                     <div class="viewww<?php echo $t['pid']; ?>"><button class="buttons" id="cart_button<?php echo $t['product_id']; ?>" style="background-color: #FF7F50;" onclick="return add_top(<?php echo $t['product_id']; ?>,'<?php echo $t['p_name']; ?>','<?php echo $t['pid']; ?>');">Add to Cart </button></div>
+                     <div class="viewww<?php echo $t['pid']; ?>"><button class="buttons" id="cart_button<?php echo $t['product_id']; ?>" style="background-color: #006400;" onclick="return add_top(<?php echo $t['product_id']; ?>,'<?php echo $t['p_name']; ?>','<?php echo $t['pid']; ?>');">Add to Cart </button></div>
                      <?php } ?>
              </p>
                         </div>
@@ -1171,7 +1159,7 @@ if($deal)
             $popular1 = $this->common_model->get_top_popular();
             if($popular){
         ?>
-<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;background-image: url(image/Background.png);">
+<div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;background-image: url(image/);">
     <!-- Carousel nav -->
     <?php if($popular1){ ?>
   <a class="next" href="#myCarousel79807768" id="myCarousel79807768_next" style="background-color:transparent;"><span></span></a>
@@ -1465,7 +1453,7 @@ if($deal)
     <div class="background-slider"></div>
     <div class="box clearfix box-with-products with-scroll box-no-advanced" style="margin-top:25px;">
  
-  <div class="box-heading" style="font-weight:bold;text-transform:uppercase;background-color:#fff;padding-bottom: 31px;line-height:0">Testimonials</div>
+  <div class="box-heading" style="font-weight:bold;text-transform:uppercase;padding-bottom: 31px;line-height:0">Testimonials</div>
     </div>
     <div class="background">
       <div class="shadow"></div>
@@ -1473,7 +1461,7 @@ if($deal)
                 <div class="fullwidth" id="camera_11">
   <div class="camera_slider">
     <div class="spinner"></div>
- <div class="camera_wrap carousel-inner owl-carousel owl-theme" id="camera_wrap_11" style="overflow: initial;background-image: url(images/back1.png);width: 100%;margin: auto;height: 389px;opacity: 1;display: block;">
+ <div class="camera_wrap carousel-inner owl-carousel owl-theme" id="camera_wrap_11" style="overflow: initial;background-image: url(images/bac/fresh2.jpeg);width: 100%;margin: auto;height: 389px;opacity: 1;display: block;">
        <div class="testimonial">
                     <div class="pic">
                         <img src="<?php echo base_url(); ?>images/users.png" alt="">
@@ -1583,12 +1571,12 @@ if($deal)
 
  <div class="container">
      <div class="brandlogo">
-   <h3>Our Presence</h3>
-   <div id="brandlogo">
+   <h3 style="font-wight:bold;">Our Presence</h3>
+   <div id="brandlogo" style="">
       <div class="owl-item">
          <img src="cdn.anscommerce.com/revamp/431-4312204_logo-transparent-big-bazaar-logo-png-clipart.png" alt="amazon logo" />
       </div>
- <div class="owl-item">
+ <div class="owl-item" style="padding:5px;">
          <img src="cdn.anscommerce.com/revamp/amzon.png" alt="amazon logo" />
       </div>
       <div class="owl-item">
@@ -1618,30 +1606,30 @@ if($deal)
    </div>
 </div>
 </div><div class="cameras-columns">
-     <div class="row">
+     <div class="row icon-responsive">
           <div class="col-sm-4">
-               <img src="images/shipping.jpg" alt="Free shipping" style="width: 120px;height: 100px;margin-top: -25px;" class="img-responsive">
+               <img src="images/icon1.png" alt="Free shipping" style="width: 120px;height: 100px;margin-top: -25px;   filter:saturate(10);" class="img-responsive">
                <div class="right" >
-                    <h6 style="color: red;">COD AVAILABLE</h6>
-                    <p style="color: red;">In Selected Areas</p>
+                    <h6 style="color: black;">COD AVAILABLE</h6>
+                    <p style="color: black;">In Selected Areas</p>
                </div>
           </div>
         
           <div class="col-sm-4">
-               <img src="images/certified.jpg" style="width: 120px;height: 100px;margin-top: -25px;" alt="Money" class="img-responsive">
+               <img src="images/icon2.png" style="width: 120px;height: 100px;margin-top: -25px;" alt="Money" class="img-responsive">
                <div class="right">
-                    <h6 style="color: red;">QUALITY ASSURED</h6>
-                    <p style="color: red;">100% Original</p>
+                    <h6 style="color: black;">QUALITY ASSURED</h6>
+                    <p style="color: black;">100% Original</p>
                </div>
           </div>
 
 
           
           <div class="col-sm-4">
-               <img src="images/seccure1.webp" style="width: 120px;height: 100px;margin-top: -25px;" alt="Support" class="img-responsive">
+               <img src="images/icon3.png" style="width: 120px;height: 100px;margin-top: -25px;" alt="Support" class="img-responsive">
                <div class="right">
-                    <h6 style="color: red;">SECURE PAYMENT</h6>
-                    <p style="color: red;">Through SSL Payment Gateway</p>
+                    <h6 style="color: black;">SECURE PAYMENT</h6>
+                    <p style="color: black;">Through SSL Payment Gateway</p>
 
 
           </div>

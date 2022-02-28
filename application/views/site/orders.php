@@ -3,6 +3,10 @@
 <head>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
 <style>
+
+body{
+    background:url(../images/whiteleave.jpeg);
+  }
         @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

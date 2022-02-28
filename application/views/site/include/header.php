@@ -24,6 +24,9 @@
 <link href="home" rel="canonical" />
 
 <style type="text/css">
+    .homebg {
+        background:url(../images/whiteleave.jpeg);
+    }
   .loader_bg{
     position: fixed;
     z-index: 999999;
@@ -68,6 +71,7 @@
         opacity: 0;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @font-face{font-family:'Pe-icon-7-stroke';src:url(https://cdn.staticans.com/temp/mypixel-font/fonts/Pe-icon-7-stroke.eot?d7yf1v);src:url(https://cdn.staticans.com/temp/mypixel-font/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v) format("embedded-opentype"),url(https://cdn.staticans.com/temp/mypixel-font/fonts/Pe-icon-7-stroke.woff?d7yf1v) format("woff"),url(https://cdn.staticans.com/temp/mypixel-font/fonts/Pe-icon-7-stroke.ttf?d7yf1v) format("truetype"),url(https://cdn.staticans.com/temp/mypixel-font/fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke) format("svg");font-weight:400;font-style:normal;font-display: swap;}
@@ -1314,7 +1318,7 @@ input#input-quantity {
 }
 @media (max-width: 992px){
 #mobile-menu-icon{
-  top: 60px;
+  top: 40px;
 }
 }
 @media (max-width: 767px){
@@ -1325,10 +1329,10 @@ input#input-quantity {
     font-size: 12px;
 }
 #mobile-menu-icon{
-    top: 70px;
+    top: 20px;
 }
 body div#mobile-search{
-    top: 77px;
+    top: 20px;
 }
 }
 </style>
@@ -1398,7 +1402,7 @@ div#mobile-search {
 #connecto-logo-block{
     display:none !important;
 }
-@media (max-width:767px){
+@media (max-width:767px){   
 div#mobile-search { display:block}
 .search-bar.open {
     display: block !important;
@@ -1473,24 +1477,46 @@ div#mobile-search { display:block}
     margin-top: 100px;
     animation: spin 2s linear infinite;
 }
+
+#hello{
+    font-size:50px;
+    color:white;
+}
 .no-search-result{
   text-align: center; 
   padding-top: 150px;
   font-size: 25px;
 }
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (max-width:764px) {
+    #logo {
+        width:80px;
+        height:10px;
+        margin-bottom:10px;
+    }
+    #logoss {
+        width:80px !important;
+        height:65px !important;
+    }
+    /* .header-left {
+        width:150px;
+        height:50px;
+    } */
 }
 </style>
 
     
  </head>
-<body class="common-home no-box-type-7 border-width-0 body-other    body-header-type- ">
+<body class="common-home no-box-type-7 border-width-0 body-other    body-header-type-  homebg" >
   <!--<div class="loader_bg">
     <div class="loader"></div>
 </div>-->
-    <nav id="top" style="display: none;">
+    <nav id="top" style="display: none;" >
       <div class="container">
     <div id="top-links" class="nav pull-right">
     <ul class="list-inline">
@@ -1513,19 +1539,19 @@ div#mobile-search { display:block}
   </div>
       </div>
     </nav>
-    <div class="header-notice" style="background-color: white;color: black;">
+    <!-- <div class="header-notice" style="background-color: white;color: black;">
 <center style="padding: 10px; border-bottom: 1px solid black;"><i class="fa fa-map-marker"></i> Office 107, Plot No. 4-5, Radhika Premier Building, Main Road Mahalaxmi Nagar, Near Canara bank, Indore (M.P.) 452010</center>
-</div>
+</div> -->
 <div id="mobile-search">
   <i class="fa fa-search"></i>
 </div>
     <header>
-  <div class="container-fluid header-container">
+  <div class="container-fluid header-container" style="background:url(../images/whiteleave.jpeg); margin-top:-10px; height:150px;">
     <div class="row" style="z-index:1">
   <div class="col-sm-2 header-left">
       <div id="logo">
                 <a href="<?php echo base_url(); ?>">
-                  <img src="<?php echo base_url();?>image/resize-164310701455515656KWBpngtransparent1.png" title="Evergreennuts" alt="Evergreennuts" class="img-responsive"  />
+                  <img src="<?php echo base_url();?>image/logoss.png" title="Evergreennuts" alt="Evergreennuts" id="logoss" class="img-responsive" style="width:150px; height:100px; margin-top:5px;" />
         </a>
               </div>
   </div>
@@ -1592,7 +1618,7 @@ div#mobile-search { display:block}
 
               </div>
   <!--Mega Menu-->
-  <div class="col-sm-7 mega-menu-modules overflow-megamenu" id="mega-menu">
+  <div class="col-sm-7 mega-menu-modules overflow-megamenu" id="mega-menu" style="border:none; background:transparent;">
 <div id="megamenu_32430250" class="container-megamenu container horizontal">
     <div class="megaMenuToggle">
     <div class="megamenuToogle-wrapper">
@@ -1604,9 +1630,9 @@ div#mobile-search { display:block}
     </div>
   </div>
     <div class="megamenu-wrapper">
-    <div class="megamenu-pattern">
-      <div class="container">
-        <ul class="megamenu slide" style="display:flex;justify-content: center;">
+    <div class="megamenu-pattern" style="background:#2A272A; margin:0px; width:101vw;">
+      <div class="container" >
+        <ul class="megamenu slide" style="display:flex;justify-content: space-evenly; color:black;">
         <?php $head1 = $this->common_model->get_categories_top(); 
                foreach($head1 as $h)
                { $sub = $this->common_model->get_subcategory($h['cid']); 
@@ -1616,8 +1642,8 @@ div#mobile-search { display:block}
                         $new = $name.'-'.$str2;  ?>
             <?php if(sizeof($sub)>0){  ?>
              
-            <li class="with-sub-menu hover"><p class="close-menu"></p><p class="open-menu"></p>
-         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a>
+            <li class="with-sub-menu hover" ><p class="close-menu"></p><p class="open-menu"></p>
+         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix" ><span><strong style="color:white; font-size:18px; font-family: 'Poppins', sans-serif;"><?php echo $h['cat_name']; ?></sapn></strong></span></a>
         <div class="sub-menu " style="width: 300px; right: auto;"><div class="content"><p class="arrow" style="left: 36px;"></p><div class="row"><div class="col-sm-12  mobile-enabled"><div class="row"><div class="col-sm-12 hover-menu">
             <div class="menu">
                 <ul>
@@ -1626,17 +1652,17 @@ div#mobile-search { display:block}
                         $name=strtolower($inps);
                         $str2 = substr($s['cat_sub_id'], 3); 
                         $new = $name.'-'.$str2;?>
-                    <li><a href="<?php echo base_url('allproduct/'.$s['cat_sub_id']); ?>" class="main-menu "><?php echo $s['sub_cat_name']; ?></a></li>
+                    <li><a href="<?php echo base_url('allproduct/'.$s['cat_sub_id']); ?>" class="main-menu "style="color:black !important; "><?php echo $s['sub_cat_name']; ?></a></li>
                      <?php } ?>
                     </ul>
                     </div></div></div></div></div></div></div>
                   
                     </li>
             <?php }else{ ?>
-            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a></li>
+            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong style="color:white; font-size:18px; font-family: 'Poppins', sans-serif;"><?php echo $h['cat_name']; ?></strong></span></a></li>
             <?php }  }?>
+            <!-- <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/logoss.png" style="width:30px;height:20px;"></a></li> -->
         
-            <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li>
     
             <?php $head2 = $this->common_model->get_categories_bottom(); 
                foreach($head2 as $h)
@@ -1703,8 +1729,7 @@ div#mobile-search { display:block}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
         var base_url = '<?php echo base_url() ?>';
-    </script>
-    <script>
+        
         $('#search .fa-search ').bind('click', function() {
 
                url = base_url+'search';
@@ -1730,6 +1755,7 @@ div#mobile-search { display:block}
                }
 	}
         }); 
+
     </script>
 </div>
               </div>

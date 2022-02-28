@@ -67,6 +67,9 @@ padding: 10px 15px 2px 15px;
 .checkout-success .cart-text.text-center {
     display: none;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

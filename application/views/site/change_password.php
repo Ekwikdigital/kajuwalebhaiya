@@ -11,6 +11,9 @@
   height: 400px;
   background-color: #fff;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 
 /* Style the buttons inside the tab */
 .tab button {

@@ -1,5 +1,8 @@
 <?php include ("include/header.php") ?>
 <style>
+  body{
+    background:url(images/whiteleave.jpeg);
+  }
 .sidenav {
   height: 120%;
   width: 0;

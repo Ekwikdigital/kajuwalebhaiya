@@ -38,7 +38,7 @@
 header{
     padding-bottom: 0;
     border: 0;
-    background: white;
+    background-image: url(../images/whiteleave.jpeg);
 }
 .mega-menu-modules ul.megamenu>li>a {
     padding: 15px 0px;
@@ -448,9 +448,13 @@ span#cart-total{
 
 
 }
+
+.homebg{
+  background:url(../images/whiteleave.jpeg);
+}
   </style>
  </head>
-<body class="product-product-390089 no-box-type-7 border-width-0 body-other    body-header-type- product-product">
+<body class=" homebg product-product-390089 no-box-type-7 border-width-0 body-other    body-header-type- product-product">
  <!--  <div class="loader_bg">
     <div class="loader"></div>
 </div>-->
@@ -460,7 +464,7 @@ span#cart-total{
         }, 2500);
     </script>
     <nav id="top" style="display: none;">
-      <div class="container">
+      <div class="container" >
   <div class="pull-left">
 
 </div>
@@ -490,9 +494,9 @@ span#cart-total{
   </div>
       </div>
     </nav>
-  <div class="header-notice" style="background-color: white;color: black;">
+  <!-- <div class="header-notice" style="background-color: white;color: black;">
 <center style="padding: 10px; border-bottom: 1px solid black;"><i class="fa fa-map-marker"></i> Office 107, Plot No. 4-5, Radhika Premier Building, Main Road Mahalaxmi Nagar, Near Canara bank, Indore (M.P.) 452010</center>
-</div>
+</div> -->
 <style>
 <style>
 
@@ -601,12 +605,12 @@ header .search-bar{
     });
 </script>
     <header>
-  <div class="container-fluid header-container">
+  <div class="container-fluid header-container" style="background:url(../images/whiteleave.jpeg); margin-top:-10px;">
     <div class="row">
   <div class="col-sm-3 header-left">
       <div id="logo">
                 <a href="<?php echo base_url(); ?>">
-                 <img src="<?php echo base_url();?>image/resize-164310701455515656KWBpngtransparent1.png" title="" alt="" class="img-responsive"  />
+                 <img src="<?php echo base_url();?>image/logoss.png" title="" alt="" style="height:100px; width:150px;" class="img-responsive"  />
         </a>
               </div>
   </div>
@@ -748,8 +752,8 @@ header .search-bar{
   </div>
     <div class="megamenu-wrapper">
     <div class="megamenu-pattern">
-      <div class="container">
-         <ul class="megamenu slide" style="display:flex;justify-content: center;">
+      <div class="container" style="background:black;">
+         <ul class="megamenu slide" style="display:flex;justify-content: space-evenly; ">
         <?php $head1 = $this->common_model->get_categories_top(); 
                foreach($head1 as $h)
                { $sub = $this->common_model->get_subcategory($h['cid']); 
@@ -760,7 +764,7 @@ header .search-bar{
             <?php if(sizeof($sub)>0){  ?>
              
             <li class="with-sub-menu hover"><p class="close-menu"></p><p class="open-menu"></p>
-         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a>
+         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix" style="color:white; font-size:18px;"><span><strong><?php echo $h['cat_name']; ?></strong></span></a>
         <div class="sub-menu " style="width: 300px; right: auto;"><div class="content"><p class="arrow" style="left: 36px;"></p><div class="row"><div class="col-sm-12  mobile-enabled"><div class="row"><div class="col-sm-12 hover-menu">
             <div class="menu">
                 <ul>
@@ -769,17 +773,17 @@ header .search-bar{
                         $name=strtolower($inps);
                         $str2 = substr($s['cat_sub_id'], 3); 
                         $new = $name.'-'.$str2;?>
-                    <li><a href="<?php echo base_url('allproduct/'.$s['cat_sub_id']); ?>" class="main-menu "><?php echo $s['sub_cat_name']; ?></a></li>
+                    <li><a href="<?php echo base_url('allproduct/'.$s['cat_sub_id']); ?>" class="main-menu " style="color:black;"><?php echo $s['sub_cat_name']; ?></a></li>
                      <?php } ?>
                     </ul>
                     </div></div></div></div></div></div></div>
                   
                     </li>
             <?php }else{ ?>
-            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a></li>
+            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix" style="color:white; font-size:18px;"><span><strong><?php echo $h['cat_name']; ?></strong></span></a></li>
             <?php }  }?>
         
-            <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li>
+            <!-- <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li> -->
             
                 <li class="mobile-menu-close"><p class="close-menu"></p>
                 <p class="open-menu mobile-disabled"></p><a href="" class="clearfix"><span><strong><span>
@@ -926,8 +930,8 @@ function closeNav() {
 <script>
  
 </script><!-- Below line of code added for showing discount percentage -->
-<div class="container-fluid">
-  <ul class="breadcrumb">
+<div class="container-fluid" style="background:url(../images/whiteleave.jpeg);">
+  <ul class="breadcrumb homebg" >
         <li><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:20px;height:20px;"></a></li>
         <li><?php echo $detail['p_name']; ?></li>
       </ul>
@@ -1183,11 +1187,11 @@ function closeNav() {
     <!-- chkzipcod start -->
   <style type="text/css">
 /*Panel Css*/
-.mypanel_chkzipcod{background:#fff}
+.mypanel_chkzipcod{}
 .panel1{width:100%;}
 .panel2{min-width:245px;width:245px}
 .panel1 .panel1head{color:#666;font-size:14px;text-align:left;margin:0}
-.panel1 .panel1body{padding:10px 0px 10px 0px;background:#fff}
+.panel1 .panel1body{padding:10px 0px 10px 0px;}
 /*Button and textnox css*/
 .btnshpinschk{background-color:#4CAF50;border:none;color:#fff;padding:10px 30px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer; border-radius:5px;}
 .btnshpinschk:hover{
@@ -1790,7 +1794,6 @@ function validationcheck() {
     margin-right:35px;
   }
 
-
 .price1 {
   color: black;
   font-size: 22px;
@@ -1802,7 +1805,7 @@ function validationcheck() {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #00e6b8;
+  background-color: #016401;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -1973,9 +1976,9 @@ select:not(:-internal-list-box) {
                         <div class="viewwws<?php echo $s['pid']; ?>"></div>
                         <a href="<?php echo base_url('shopping-cart'); ?>"><button class="buttons" class="views<?php echo $s['pid']; ?>">View Cart </button> </a>
                     <?php } else if(!$this->session->userdata['u_id']){ ?>
-                    <a href="<?php echo base_url('login'); ?>"><button class="buttons" id="cart_button">Add to Cart </button></a>
+                    <a href="<?php echo base_url('login'); ?>"><button style="background-color:#016401 !important;" class="buttons" id="cart_button">Add to Cart </button></a>
                     <?php } else{ ?>
-                    <div class="viewwws<?php echo $s['pid']; ?>"><button class="buttons" id="cart_button<?php echo $s['product_id']; ?>" onclick="return addcarts(<?php echo $s['product_id']; ?>,'<?php echo $s['p_name']; ?>','<?php echo $s['pid']; ?>');">Add to Cart </button></div>
+                    <div class="viewwws<?php echo $s['pid']; ?>"><button style="background-color:#016401 !important;" class="buttons" id="cart_button"<?php echo $s['product_id']; ?>" onclick="return addcarts(<?php echo $s['product_id']; ?>,'<?php echo $s['p_name']; ?>','<?php echo $s['pid']; ?>');">Add to Cart </button></div>
                      <?php } ?>
            
             </p></div>        </div>        </div>

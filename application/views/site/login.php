@@ -3,6 +3,10 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 <style>
+
+body{
+    background:url(images/whiteleave.jpeg);
+  }
         @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;
@@ -132,7 +136,7 @@
             text-align: center;
         }
 </style>
-<div class="container" style="width:100%;background-color: #fbfbfb">
+<div class="container" style="width:100%;background: url(../images/whiteleave.jpeg);">
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <?php $head = $this->common_model->get_cat_all(); 

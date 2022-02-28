@@ -15,6 +15,9 @@
 </head>
 <body class="product-category-63045                  no-box-type-7        border-width-0 body-other    body-header-type- product-category">
             <style>
+                body{
+    background:url(images/whiteleave.jpeg);
+  }
                     @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

@@ -37,6 +37,9 @@
   transition: 0.3s;
   font-size: 17px;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 
 /* Change background color of buttons on hover */
 .tab button:hover {

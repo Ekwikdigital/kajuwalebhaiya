@@ -10,6 +10,8 @@ public function __construct()
 	require_once APPPATH.'third_party/src/contrib/Google_Oauth2Service.php';
 		$this->load->model('Common_model');
 		$this->load->library('email');
+		$this->load->helper('security');
+
 }
 	
 	public function index()
@@ -20,8 +22,8 @@ public function __construct()
 	public function login()
 	{
 	
-		$clientId = '99193631344-o4f9eoq70phj2cnconccu0maribm5m6l.apps.googleusercontent.com'; //Google client ID
-		$clientSecret = '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'; //Google client secret
+		$clientId = '1028403516180-2bhvufvahf1v1dg50rde3b69rdslii4e.apps.googleusercontent.com'; //Google client ID
+		$clientSecret = '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'; //Google client secret
 		$redirectURL = base_url() .'googlelogin/login';
 		
 		//https://curl.haxx.se/docs/caextract.html

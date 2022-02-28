@@ -152,6 +152,9 @@ label.custom-clearall {
     font-size: 14px;
     cursor: pointer;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 .filter-sec .list-group span.show-more {
     padding: 4px 12px;
     font-weight: 400;
@@ -176,7 +179,7 @@ label.custom-clearall {
 
 
 .price1 {
-  color: #00e6b8;
+  color: #016401;
   font-size: 22px;
   padding: 17px;
 }
@@ -186,7 +189,7 @@ label.custom-clearall {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #00e6b8;
+  background-color: #016401;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -443,7 +446,7 @@ span#wishlist-total{
                 <div class="product-layout product-item product-grid col-xs-6 col-md-4 col-lg-3 zoom box"  style="height:427px;margin-bottom:70px;">
                     <div class="product-thumb size-option splug-product-thumb">
                      <div class="card">
-       <a href="<?php if($p['type']==1){ echo base_url('product-detail/'.$p['product_id']); } else { echo base_url('product/'.$p['product_id']);  }?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #00e6b8;padding: 25px;height:90px"><?php echo $p['p_name']; ?></h1></a>
+       <a href="<?php if($p['type']==1){ echo base_url('product-detail/'.$p['product_id']); } else { echo base_url('product/'.$p['product_id']);  }?>"> <h1 style="font-size: 15px;font-weight: bold;text-transform: uppercase;color: #016401;padding: 25px;height:90px"><?php echo $p['p_name']; ?></h1></a>
  <a href="<?php if($p['type']==1){ echo base_url('product-detail/'.$p['product_id']); } else { echo base_url('product/'.$p['product_id']);  }?>"> <img src="<?php echo base_url('thumbnail/'.$p['p_image']); ?>" alt="Denim Jeans" style="max-width: 100%;margin:-35px;height: 220px;"></a>
   
  <button type="button" class="wishlist-icon wishlist-add-390089" style="display: none;" data-toggle="tooltip" title="Add to Wish List" onclick=""><i class="fa fa-heart"></i></button>
@@ -475,13 +478,13 @@ span#wishlist-total{
                     $price1=number_format($old_price);
                    // $new_price=str_replace(',', '', $price1);
                 ?>   
-                <span class="price-new" style="color: #00e6b8;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
+                <span class="price-new" style="color: #016401;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price1; ?> </span>
                 <?php } else{
                     $price1 = $old_price - ($old_price * $discount / 100);
                     $price2= number_format($price1);
                     //$new_price=str_replace(',', '', $price2);
                   ?>
-                  <span class="price-new" style="color: #00e6b8;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
+                  <span class="price-new" style="color: #016401;font-size:14px;" id="demo"><i class="fa fa-inr rs-sym"></i> <?php echo $price2; ?> </span>
                 <span class="price-old" id="new" style="font-size:14px;"><i class="fa fa-inr rs-sym"></i> <?php echo number_format($old_price); ?></span>
                 <span>
                     <span class="sale sale-percentage"><?php echo $discount; ?>% Off</span>
@@ -522,9 +525,9 @@ span#wishlist-total{
                         <a href="<?php echo base_url('shopping-cart'); ?>">
                             <button class="buttons" class="views<?php echo $p['pid']; ?>">View Cart</button></p></a>
                     <?php } else if(!$this->session->userdata['u_id']){ ?>
-                        <a href="<?php echo base_url('login'); ?>"><button class="buttons" id="cart_button">Add to Cart </button></a>
+                        <a href="<?php echo base_url('login'); ?>"><button style="background-color:#016401 !important;" class="buttons" id="cart_button">Add to Cart </button></a>
                     <?php } else{ ?>
-                        <div class="viewww<?php echo $p['product_id']; ?>"><button class="buttons" id="cart_button<?php echo $p['product_id']; ?>" onclick="return addcart(<?php echo $p['product_id']; ?>,'<?php echo $p['p_name']; ?>','<?php echo $p['pid']; ?>');">Add to Cart </button></div>
+                        <div class="viewww<?php echo $p['product_id']; ?>"><button style="background-color:#016401 !important;" class="buttons" id="cart_button<?php echo $p['product_id']; ?>" onclick="return addcart(<?php echo $p['product_id']; ?>,'<?php echo $p['p_name']; ?>','<?php echo $p['pid']; ?>');">Add to Cart </button></div>
                     <?php } ?>
             </div>
                 

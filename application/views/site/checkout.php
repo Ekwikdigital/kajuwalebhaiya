@@ -11,6 +11,9 @@
 <body class="checkout-cart no-box-type-7 border-width-0 body-other    body-header-type- checkout-cart">
 
    <style>
+       body{
+    background:url(images/whiteleave.jpeg);
+  }
     .empty-cart{margin-top: 30px !important;text-align:center;}
     .tick-icon i {width: 70px;height: 70px;border: 3px solid #9e9e9e;border-radius: 50%;line-height: 65px;text-align: center;font-size: 30px;color: #9e9e9e;}
     .empty-cart p {margin-top: 15px;margin-bottom: 27px;font-size: 16px;}

@@ -16,6 +16,9 @@
 .product-product #button-cart, .product-product #button-buy-now, .m-pdp .addtoCart-Btn {
       border: none;
 }
+body{
+    background:url(images/whiteleave.jpeg);
+  }
 .product-product #button-buy-now, .product-product #button-buy-now:hover {
     color: #ffffff;
     background: #54b03d;
@@ -244,9 +247,14 @@ select:not(:-internal-list-box) {
 .category-description .desc-more{ display : block !important;}
 .desc-more {color: blue;margin-left: 10px;cursor: pointer;}
 
+
+.homebg{
+    background:url(../images/whiteleave.jpeg);
+}
+
         </style> 
 </head>
-<body class="product-category-63045                  no-box-type-7        border-width-0 body-other    body-header-type- product-category">
+<body class="product-category-63045   homebg               no-box-type-7        border-width-0 body-other    body-header-type- product-category">
           
         <?php $cat_ids=$this->uri->segment(2); ?>
 <div id="mySidenav" class="sidenav">
@@ -278,7 +286,7 @@ select:not(:-internal-list-box) {
 
 
 </div>
-<div class="container-fluid splug-container">
+<div class="container-fluid splug-container" style="background:black !important;">
     <!-- breadcrum section -->
 
             <div class="message"></div>

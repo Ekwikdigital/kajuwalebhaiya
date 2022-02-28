@@ -2,6 +2,9 @@
 <title>Reset Password</title>
 <script src="<?php echo base_url(); ?>face/view/theme/ans-theme/javascript/custom_registration02db.js?v=1639917222" type="text/javascript" defer></script>
 <style>
+  body{
+    background:url(../images/whiteleave.jpeg);
+  }
         @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;

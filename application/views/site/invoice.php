@@ -5,6 +5,9 @@
 <title>Invoice</title>
 
 <style>
+    body{
+    background:url(../images/whiteleave.jpeg);
+  }
      .body-main {
      background: #ffffff;
      border-top: 15px solid #1E1F23;

@@ -1,6 +1,10 @@
 <?php include ("include/header.php") ?>
 <title>Manage Address</title>
 <head><style>
+
+body{
+    background:url(images/whiteleave.jpeg);
+  }
         @media (max-width: 767px){
 #mobile-menu-icon{
     z-index:1;
