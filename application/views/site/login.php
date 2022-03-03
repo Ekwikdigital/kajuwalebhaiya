@@ -5,7 +5,7 @@
 <style>
 
 body{
-    background:url(images/whiteleave.jpeg);
+    background:url(../images/whiteleave.jpeg);
   }
         @media (max-width: 767px){
 #mobile-menu-icon{

@@ -446,8 +446,6 @@ span#cart-total{
     padding:7px 0;
 }
 
-
-}
 .header-notice {
     background: #E22127;
     color: #ffffff;
@@ -683,7 +681,7 @@ header .search-bar{
   <!-- <div class="header-notice" style="background-color: white;color: black;">
 <center style="padding: 10px; border-bottom: 1px solid black;"><i class="fa fa-map-marker"></i> Office 107, Plot No. 4-5, Radhika Premier Building, Main Road Mahalaxmi Nagar, Near Canara bank, Indore (M.P.) 452010</center>
 </div> -->
-<div id="mobile-search">
+<div id="mobile-search" style="margin-top:-70px;">
 	<i class="fa fa-search" style="color:black;margin-top:15px;"></i>
 </div>
     <header>
@@ -692,7 +690,7 @@ header .search-bar{
   <div class="col-sm-3 header-left">
       <div id="logo">
                 <a href="<?php echo base_url(); ?>">
-                 <img src="<?php echo base_url();?>image/logoss.png" title="" alt="" class="img-responsive" style="height:100px; width:150px;" />
+                 <img src="<?php echo base_url();?>image/logoss.png" title="" alt="" class="img-responsive" style="height:80px; width:100px;" />
         </a>
               </div>
   </div>
@@ -774,7 +772,7 @@ header .search-bar{
 
               </div>
   <!--Mega Menu-->
-          <div class="col-sm-7 mega-menu-modules overflow-megamenu" id="mega-menu" >
+          <div class="col-sm-7 mega-menu-modules overflow-megamenu" id="mega-menu" style="background: transparent;">
 
 
 <div id="megamenu_32430250" class="container-megamenu container horizontal">
@@ -898,7 +896,7 @@ header .search-bar{
       </li>
       <?php } ?>
 </div>
-<div id="mobile-menu-icon"><span style="font-size:30px;cursor:pointer;color:black;z-index:1" onclick="openNav()">&#9776;</span>
+<div id="mobile-menu-icon" style="margin-top:-50px;"><span style="font-size:30px;cursor:pointer;color:black;z-index:1;" onclick="openNav()">&#9776;</span>
 
 </div>
 <div class="container-fluid">
@@ -972,7 +970,7 @@ header .search-bar{
             <!-- AddThis Button END -->
       
                     
-                    <ul class="list-unstyled price-container">
+                    <ul class="list-unstyled price-container" style="display: flex; height:100px;" >
                         <li><?php $prices = $this->common_model->get_all_price($detail['pack_id']); ?>
         <select checked="checked" name="mySelect" id="add<?php echo $detail['pack_id']; ?>" onchange="return leaveChange($(this).val(),<?php echo $detail['pack_id']; ?>,<?php echo $detail['type']; ?>)">
         <?php foreach($prices as $pr)
@@ -980,7 +978,7 @@ header .search-bar{
                 <option value="<?php echo $pr['weight']; ?>"><?php echo $pr['weight']; ?></option>
             <?php } ?>
         </select></li>
-                        <li style="content: "\A";white-space: pre;">
+                        <li style="white-space: pre;">
                             <p class="price<?php echo $detail['pack_id']; ?>">
                <?php 
                 $price = $this->common_model->get_price($detail['pack_id']); 
@@ -1826,7 +1824,7 @@ var responsive_design = 'yes';
 <script>
         var base_url = '<?php echo base_url() ?>';
     </script>
-    <script type="text/javascript"><!--
+    <script type="text/javascript">
 window.addEventListener('load', function() { 
     $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
             $.ajax({
@@ -1869,7 +1867,7 @@ $(document).ready(function(){
 
 
 
-<!--
+
 window.addEventListener('load', function() {                     
 $('#button-cart1').on('click', function() {
   $.ajax({
@@ -1940,7 +1938,7 @@ $("#product input").on("change",function(){
 <!-- Buy Now -->
                          
                                
-<script type="text/javascript"><!--
+<script type="text/javascript">
  window.addEventListener('load', function() {                                                    
 $('.date').datetimepicker({
   pickTime: false
@@ -1990,7 +1988,7 @@ function leaveChange(val,id,type) {
 }
 </script>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
  window.addEventListener('load', function() {                                                                            
 
 $(document).ready(function() {

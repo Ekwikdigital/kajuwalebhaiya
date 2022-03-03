@@ -185,7 +185,7 @@ function closeNav() {
            <div id="content" class="row cartPage custom-cart-page">
                
       <div class="col-sm-1"></div>         
-	<div class="col-sm-10 cart-left">
+	<div class="col-sm-10 cart-left" >
 	        <ul class="breadcrumb">
         <li><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:20px;height:20px;"></a></li>
          <li><a href="<?php echo base_url('shopping-cart'); ?>">Shopping Cart</a></li>
@@ -501,3 +501,17 @@ $('input[name=shipping_address]').click(function () {
 
 </body></html>
 <?php include ("include/footer.php") ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

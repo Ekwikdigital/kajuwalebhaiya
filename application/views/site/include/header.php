@@ -16,6 +16,15 @@
 <link rel="preload" href="<?php echo base_url(); ?>face/view/theme/ans-theme/stylesheet/stylesheet02db.css?v=1639917222" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="<?php echo base_url(); ?>face/view/theme/ans-theme/stylesheet/stylesheet02db.css?v=1639917222"></noscript>
 <link rel="stylesheet" href="<?php echo base_url(); ?>face/view/theme/fastor/css/menu1bce.css?v=6">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H8V2FVFCYX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'G-H8V2FVFCYX');
+</script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <link href="<?php echo base_url(); ?>face/view/theme/ans-theme/stylesheet/face1.css?v=1639917222" rel="stylesheet">
@@ -1521,9 +1530,9 @@ div#mobile-search { display:block}
     <div id="top-links" class="nav pull-right">
     <ul class="list-inline">
       <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><?php if($this->session->userdata['u_id']){ $users = $this->common_model->get_single_data('users',array('id'=>$this->session->userdata['u_id'])); if($users['picture']!=''){ ?><img src="<?php echo $users['picture']; ?>" class="img-responsive" style="border-radius:50%;width:100px;height:30px"><?php } else{ ?>
-   <i class="fa fa-user" aria-hidden="true" style="color: black;"></i>
+   <i class="fa fa-user" aria-hidden="true" style="color: black; margin-top:10px;"></i>
    <?php } }else{ ?>
-  <i class="fa fa-user" aria-hidden="true" style="color: black;"></i><?php } ?> <span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="caret"></span></a>
+  <i class="fa fa-user" aria-hidden="true" style="color: black;  margin-top:10px;"></i><?php } ?> <span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="caret"></span></a>
         <ul class="dropdown-menu dropdown-menu-right">
        <?php if($this->session->userdata['u_id']){ ?>
             <li><a href="<?php echo base_url('account'); ?>">My Account</a></li>
@@ -1567,9 +1576,9 @@ div#mobile-search { display:block}
     <div class="my-account dropdown">
       <a href="#" title="My Account" class="my-account-link dropdown-toggle" data-toggle="dropdown">
             <?php if($this->session->userdata['u_id']){ $users = $this->common_model->get_single_data('users',array('id'=>$this->session->userdata['u_id'])); if($users['picture']!=''){ ?><img src="<?php echo $users['picture']; ?>" class="img-responsive" style="border-radius:50%;width:100px;height:30px"><?php } else{ ?>
-   <i class="fa fa-user" aria-hidden="true" style="color: black;"></i>
+   <i class="fa fa-user" aria-hidden="true" style="color: black;  margin-top:10px;"></i>
    <?php } }else{ ?>
-  <i class="fa fa-user" aria-hidden="true" style="color: black;"></i><?php } ?>
+  <i class="fa fa-user" aria-hidden="true" style="color: black; margin-top:10px;"></i><?php } ?>
     <!--<span class="hidden-xs hidden-sm hidden-md">
         My Account    </span>-->
     <span class="caret"></span>
@@ -1592,7 +1601,7 @@ div#mobile-search { display:block}
             { ?>
    <a href="<?php echo base_url('shopping-cart'); ?>"> <button type="button" class="cart-price dropdown-toggle " title="Cart">
         <span class="cart-icon">
-    <i class="fa fa-shopping-cart" aria-hidden="true" style="color: black;"></i>
+    <i class="fa fa-shopping-cart" aria-hidden="true" style="color: black; margin-top:10px;"></i>
   </span>
         <i class="cart-count">
             <?php
@@ -1608,7 +1617,7 @@ div#mobile-search { display:block}
     <?php }else{ ?>
     <a href="<?php echo base_url('login'); ?>"> <button type="button" class="cart-price dropdown-toggle " title="Cart">
         <span class="cart-icon">
-    <i class="fa fa-shopping-cart" aria-hidden="true" style="color: black;"></i>
+    <i class="fa fa-shopping-cart" aria-hidden="true" style="color: black; margin-top:10px;"></i>
   </span>
 
     </button></a>

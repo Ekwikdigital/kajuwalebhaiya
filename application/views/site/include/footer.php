@@ -140,7 +140,7 @@ span#wishlist-total{
  <li style="color:black;"> Get Social with us:</li>
     <li><a target="_blank" href="https://www.facebook.com/Kajuwalebhaiya/"><i class="fa fa-facebook"></i></a></li>
     <li><a target="_blank" href="https://www.instagram.com/kajuwalebhaiya/"><i class="fa fa-instagram"></i></a></li>
-    <li><a target="_blank" href="https://www.youtube.com/channel/UC2vjY9nuSJGI798r63shseg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+    <li><a target="_blank" href="https://www.youtube.com/channel/UC2vjY9nuSJGI798r63shseg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 </ul> 
 </div>
 <div class="col-sm-9">

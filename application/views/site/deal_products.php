@@ -286,7 +286,7 @@ select:not(:-internal-list-box) {
 
 
 </div>
-<div class="container-fluid splug-container" style="background:black !important;">
+<div class="container-fluid splug-container" style="">
     <!-- breadcrum section -->
 
             <div class="message"></div>

@@ -22,8 +22,10 @@ public function __construct()
 	public function login()
 	{
 	
-		$clientId = '1028403516180-2bhvufvahf1v1dg50rde3b69rdslii4e.apps.googleusercontent.com'; //Google client ID
-		$clientSecret = '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'; //Google client secret
+		//Google client ID
+		$clientId = '1028403516180-2bhvufvahf1v1dg50rde3b69rdslii4e.apps.googleusercontent.com'; 
+		//Google client secret
+		$clientSecret = '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'; 
 		$redirectURL = base_url() .'googlelogin/login';
 		
 		//https://curl.haxx.se/docs/caextract.html

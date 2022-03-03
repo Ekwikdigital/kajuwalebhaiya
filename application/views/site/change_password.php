@@ -155,7 +155,6 @@ body{
       }
   }
  
-}
 .page-fullWidthComponent .country_code_edit {
     border: 1.5px solid #d6d6d6;
     border-radius: 0;
