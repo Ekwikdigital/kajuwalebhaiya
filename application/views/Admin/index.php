@@ -1,7 +1,6 @@
 <?php include ("include/header.php") ?>
 <head><title>Kajuwalebhaiya - Admin</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></head>
-<body class="hold-transition sidebar-mini">
 
 <div class="wrapper">
   <div class="content-wrapper">
@@ -92,21 +91,88 @@
           </div>
           <!-- ./col -->
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-</div>
-<!-- ./wrapper -->
-<!-- jQuery -->
 
-<!-- Page specific script -->
+
+
+
+        
 
 </body>
 
 
 <!-- Mirrored from demo.dashboardpack.com/analytic-html/index_3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Dec 2021 05:58:46 GMT -->
 </html>
+
+        <!-- 
+                <style>
+          .blog{
+            height:400px;
+            width: 100%;
+            /* border:2px solid red; */
+          }
+          .form-group{
+            display:flex;
+            flex-direction:column;
+          }
+        </style>
+        
+        php tag aayega yeha
+        
+        $servername = "localhost";
+        $username = "u775928650_ekwikdigital";
+        $password = "Admin007@#digital";
+        $database = "u775928650_kajuwalebhaiya";
+        
+        $conn = mysqli_connect($servername,$username,$password,$database);
+        
+        if(!$conn){
+            die("sorry we failed to connect".mysqli_connect_error());
+        }	
+        
+        $sql = "SELECT * FROM `blogs`";
+        $result = mysqli_query($conn,$sql);
+        
+        
+        ?>
+        
+        <section class="blog">
+          <h1>This is for blog section</h1>
+          <form action="blog" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="blogheading"> Blog Heading</label>
+              <input type="text" name="blogheading" id="blogheading">
+            </div>
+            <div class="form-group">
+              <label for="blogdesc"> Blog Description</label>
+              <textarea name="blogdesc" id="blogdesc" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="blogimage"> Blog Image</label>
+              <input type="file" name="blogimage" id="blogimage">
+            </div>
+            <input type="submit" name="submit" value="Post Blog" >
+          </form>
+        </section>
+                <!-- /.row -->
+                <!-- Main row -->
+                <!-- /.row (main row) -->
+              <!-- </div> -->
+              <!-- /.container-fluid -->
+            <!-- </section> -->
+            <!-- /.content -->
+          <!-- </div>
+        </div> -->
+        <!-- ./wrapper -->
+        <!-- jQuery -->
+        
+        <!-- Page specific script -->
+        
+        <!-- <script src="./ckeditor/ckeditor.js"></script> -->
+        <!-- <script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+        <script>
+           ClassicEditor
+            .create(document.querySelector('#blogdesc'))
+            .catch(error => {
+              console.error(error)
+            })
+        </script>  -->

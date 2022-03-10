@@ -53,12 +53,21 @@ code {
 p {
 	margin: 12px 15px 12px 15px;
 }
+.error {
+            height: 90vh;
+            width: 90vw;
+            background: no-repeat center center/contain url(../images/6333685.jpg);
+        }
 </style>
 </head>
 <body>
-	<div id="container">
+	<!-- <div id="container">
 		<h1><?php echo $heading; ?></h1>
 		<?php echo $message; ?>
-	</div>
+	</div> -->
+	<a href="https://www.kajuwalebhaiya.com/">
+	<section class="error">
+	</section>
+	</a>
 </body>
 </html>

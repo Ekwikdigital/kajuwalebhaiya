@@ -250,8 +250,8 @@ body{
                     </div>
                 </form>
             </div>
-            <!-- Normal Login form end -->
-                        <!-- otp Login form start -->
+                <!-- Normal Login form end -->
+                            <!-- otp Login form start -->
             <div role="tabpanel" class="tab-pane" id="login-with-mobile">
 		<p class="login-otp-img" style="margin-bottom: 15px;"></p>
                 <form action="" method="post"  enctype="multipart/form-data" ><input type="hidden" name="__csrf" id="__csrf" value="b3d52320db88c0938e3627c8320945482dd6fc51">

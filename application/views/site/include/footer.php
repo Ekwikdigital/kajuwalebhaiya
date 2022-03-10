@@ -92,6 +92,7 @@ span#wishlist-total{
     <li><a href="<?php echo base_url('about-us'); ?>">About Us </a></li>
     <li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
     <li><a href="<?php echo base_url('terms-condition'); ?>">Terms & Conditions</a></li>
+    <!-- <li><a href="<?php echo base_url('blog'); ?>">Our Blog</a></li> -->
 </ul>
  </div>
  <div class="col-sm-3">
@@ -118,7 +119,7 @@ span#wishlist-total{
     ?>
     <li style="font-weight:bold;"><a href="<?php echo base_url('products/'.$c['cat_id']); ?>"><?php echo $c['cat_name']; ?></a></li>
     <?php } } ?>
- </ul>    
+  </ul>    
 </div>
 <div class="col-sm-3" >
    <h4 style="color: #000;font-weight: bold;">Customer Care
@@ -128,7 +129,8 @@ span#wishlist-total{
 </h4>
 <ul>
    <p style="color: #000;">For any queries related to your order or general issues, please call us at: <br>
-<a href="tel:+91 6543002134"><i class="fa fa-phone" style="color: #000;"></i> +91 6543002134</p>   </a>   
+<a href="tel:+91 9717666076"><i class="fa fa-phone" style="color: #000;"></i> +91 9717666076</p>   </a>   
+<a href=""><i class="fa fa-mail" style="color: #000;"></i>Hello@kajuwalebhaiya.com</p>   </a>   
 <p style="color: #000;">Timing: 10:30 AM to 8 PM</p> 
 <p style="color: #000;">(Monday to Saturday)</p>
  </ul> 

@@ -799,7 +799,7 @@ header .search-bar{
             <?php if(sizeof($sub)>0){  ?>
              
             <li class="with-sub-menu hover"><p class="close-menu"></p><p class="open-menu"></p>
-         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong style="color:white;"><?php echo $h['cat_name']; ?></strong></span></a>
+         <a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong style="color:white; font-size:18px;"><?php echo $h['cat_name']; ?></strong></span></a>
         <div class="sub-menu " style="width: 300px; right: auto;"><div class="content"><p class="arrow" style="left: 36px;"></p><div class="row"><div class="col-sm-12  mobile-enabled"><div class="row"><div class="col-sm-12 hover-menu">
             <div class="menu">
                 <ul>
@@ -815,7 +815,7 @@ header .search-bar{
                   
                     </li>
             <?php }else{ ?>
-            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong><?php echo $h['cat_name']; ?></strong></span></a></li>
+            <li class=""><p class="close-menu"></p><p class="open-menu mobile-disabled"></p><a href="<?php echo base_url('products/'.$h['cat_id']); ?>" class="clearfix"><span><strong style="color:white; font-size:18px;"><?php echo $h['cat_name']; ?></strong></span></a></li>
             <?php }  }?>
         
             <!-- <li class="home"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>image/resize-164310701455515656KWBpngtransparent1.png" style="width:30px;height:20px;"></a></li> -->
@@ -1139,10 +1139,10 @@ input[type=number] { -moz-appearance: textfield; }
                 <div id="chkzipcod_response1"></div>
   </div>  
 </div> 
-<div style="padding: 20px; display: inline-block;"><img src="<?php echo base_url(); ?>images/delivery.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"><p style="color: black;font-weight:bold;font-size:14px;text-align:center">Pay on Delivery</p></div>
-<div style="padding: 20px;display: inline-block;"><img src="<?php echo base_url(); ?>image/refunds.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Not Returnable</p></div>
-<div style="padding: 20px; display: inline-block; margin-bottom: 2em;"> <img src="<?php echo base_url(); ?>image/express.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Express Delivery</p></div>
-<div style="padding: 20px;display: inline-block; margin-bottom: 2em;"> <img src="<?php echo base_url(); ?>image/contact.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">No-Contact Delivery</p></div>
+<div style="padding: 20px; display: inline-block;"><img src="<?php echo base_url(); ?>images/icons8-cash-on-delivery-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"><p style="color: black;font-weight:bold;font-size:14px;text-align:center">Pay on Delivery</p></div>
+<div style="padding: 20px;display: inline-block;"><img src="<?php echo base_url(); ?>images/icons8-no-hidden-fees-48.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Not Returnable</p></div>
+<div style="padding: 20px; display: inline-block; margin-bottom: 2em;"> <img src="<?php echo base_url(); ?>images/icons8-express-delivery-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Express Delivery</p></div>
+<div style="padding: 20px;display: inline-block; margin-bottom: 2em;"> <img src="<?php echo base_url(); ?>images/icons8-no-touch-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive"> <p style="color: black;font-weight:bold;font-size:14px;text-align:center">No-Contact Delivery</p></div>
  <div class="description custom-description" style="font-size:16px;">
       <h3>Additional Information</h3>
             <?php if($detail['p_brand']!=''){ ?>Brand:<span>&nbsp;&nbsp;<?php echo $detail['p_brand']; ?></span><br /><?php } ?>

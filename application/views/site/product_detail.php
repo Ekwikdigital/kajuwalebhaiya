@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo $detail['p_name']; ?></title>
+  <title>Buy 100% Pure <?php echo $detail['p_name']; ?> Online at Best Price</title>
   <base />
   <meta name="description" content="The outer shell protects and provides natural freshness. Crack them for snacking or use in recipes just when you want them." />
   <link rel="stylesheet" href="<?php echo base_url(); ?>face/view/theme/fastor/css/menu1bce.css?v=6">
@@ -897,7 +897,7 @@
             <div class="megamenu-wrapper">
               <div class="megamenu-pattern">
                 <div class="container" >
-                  <ul class="megamenu slide" style="display:flex;justify-content: space-evenly; ">
+                  <ul class="megamenu slide" style="display:flex;justify-content: space-evenly; background:black;">
                     <?php $head1 = $this->common_model->get_categories_top();
                     foreach ($head1 as $h) {
                       $sub = $this->common_model->get_subcategory($h['cid']);
@@ -1257,6 +1257,13 @@
           </style>
           <div class="col-sm-6">
             <h1 class="product-title"><?php echo $detail['p_name']; ?></h1>
+            <?php if ($detail['p_about'] != '') { ?>
+              <div class="product-specification desktop">
+                <hr class="content-section">
+                <!-- <p style="font-weight:bold;font-size:17px;">About this item</p> -->
+                <?php echo $detail['p_about']; ?>
+              </div>
+            <?php } ?>
             <div class="addthis_toolbox addthis_default_style" data-url="8906019770182.html">
 
               <!-- AddThis Button END -->
@@ -1500,17 +1507,17 @@
                 <div id="chkzipcod_response1"></div>
               </div>
             </div>
-            <div style="display: flex;">
-              <div><img src="<?php echo base_url(); ?>images/delivery.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
+            <div style="display: flex; justify-content:space-evenly;">
+              <div><img src="<?php echo base_url(); ?>images/icons8-cash-on-delivery-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
                 <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Pay on Delivery</p>
               </div>
-              <div><img src="<?php echo base_url(); ?>image/refunds.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
+              <div><img src="<?php echo base_url(); ?>images/icons8-no-hidden-fees-48.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
                 <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Not Returnable</p>
               </div>
-              <div> <img src="<?php echo base_url(); ?>image/express.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
+              <div> <img src="<?php echo base_url(); ?>images/icons8-express-delivery-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
                 <p style="color: black;font-weight:bold;font-size:14px;text-align:center">Express Delivery</p>
               </div>
-              <div> <img src="<?php echo base_url(); ?>image/contact.jpg" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
+              <div> <img src="<?php echo base_url(); ?>images/icons8-no-touch-64.png" alt="Free shipping" style="width: 95px;height: 70px;" class="img-responsive">
                 <p style="color: black;font-weight:bold;font-size:14px;text-align:center">No-Contact Delivery</p>
               </div>
             </div>
@@ -1636,13 +1643,6 @@
 
             <div class="custom-specification"></div>
 
-            <?php if ($detail['p_about'] != '') { ?>
-              <div class="product-specification desktop">
-                <hr class="content-section">
-                <p style="font-weight:bold;font-size:17px;">About this item</p>
-                <?php echo $detail['p_about']; ?>
-              </div>
-            <?php } ?>
           </div>
         </div>
         <style>

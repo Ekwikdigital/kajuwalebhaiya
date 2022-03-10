@@ -533,7 +533,7 @@
             <div class="spinner"></div>
             <div class="camera_wrap carousel-inner" id="camera_wrap_1" style="overflow: hidden; margin: auto; height: px; max-width: px;">
               <div style="width:100%;"><a href="products/12030" class="">
-                  <img src="images/fresh.png" data-src="images/fresh.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
+                  <img src="images/fresh3.png" data-src="images/fresh3.png" title="Slider" alt="Slider" class="lload img-responsive" width="100%" height="550">
                 </a>
               </div>
               <div style="width:100%;">
@@ -2096,7 +2096,7 @@
         $("#camera_1 .spinner").fadeOut(200);
         $("#camera_wrap_1").css("height", "auto");
       });*/
-    </script>
+    </script>  
 
     <script>
       function openNav() {

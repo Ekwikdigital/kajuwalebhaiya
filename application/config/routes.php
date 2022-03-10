@@ -82,6 +82,9 @@ $route['order-confirm'] = 'Cart/orderconfirmation';
 $route['thankyou'] = 'Cart/thanks';
 $route['update-address'] = 'cart/updateaddress';
 $route['address-update'] = 'cart/addressupdate';
+$route['blog'] = 'home/blog';
+$route['blogpost'] = 'home/blogpost';
+$route['blogupload'] = 'home/blogupload';
 
 
 

@@ -37,6 +37,18 @@ class Home extends CI_Controller
 	{
 	    $this->load->view('site/register');
 	}
+	public function blog()
+	{
+	    $this->load->view('site/blog');
+	}
+	public function blogpost()
+	{
+	    $this->load->view('site/blogpost');
+	}
+	public function blogupload()
+	{
+	    $this->load->view('site/blogupload');
+	}
 
 	function invoice($id)
 	{
@@ -648,13 +660,13 @@ class Home extends CI_Controller
         if($discount==0)
         {
             $price1=number_format($old_price);
-            $json['sub']= '<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
+            $json['sub']= '<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
              $json['price'] =$price1;
         }
         else{
             $price1 = $old_price - ($old_price * $discount / 100);
             $price2= number_format($price1);
-            $json['sub']='<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
+            $json['sub']='<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
             $json['sub'] .='<span class="price-old" style="font-size:14px" id="new"><i class="fa fa-inr rs-sym"></i> '.number_format($old_price).'</span>';
             $json['sub'] .='<span style="font-size:14px"><span class="sale sale-percentage">'.$discount.'% Off</span></span>';
             $json['price'] =$price2;
@@ -677,13 +689,13 @@ class Home extends CI_Controller
         if($discount==0)
         {
             $price1=number_format($old_price);
-            $json['sub']= '<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
+            $json['sub']= '<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
              $json['price'] =$price1;
         }
         else{
             $price1 = $old_price - ($old_price * $discount / 100);
             $price2= number_format($price1);
-            $json['sub']='<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
+            $json['sub']='<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
             $json['sub'] .='<span class="price-old" style="font-size:14px" id="new"><i class="fa fa-inr rs-sym"></i> '.number_format($old_price).'</span>';
             $json['sub'] .='<span style="font-size:14px"><span class="sale sale-percentage">'.$discount.'% Off</span></span>';
             $json['price'] =$price2;
@@ -764,13 +776,13 @@ class Home extends CI_Controller
             if($discount==0)
             {
                 $price1=number_format($old_price);
-                $json['sub']= '<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
+                $json['sub']= '<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
                 $json['price'] =$price1;
             }
             else{
                 $price1 = $old_price - ($old_price * $discount / 100);
                 $price2= number_format($price1);
-                $json['sub']='<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
+                $json['sub']='<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
                 $json['sub'] .='<span class="price-old" style="font-size:14px" id="new"><i class="fa fa-inr rs-sym"></i> '.number_format($old_price).'</span>';
                 $json['sub'] .='<span style="font-size:14px"><span class="sale sale-percentage">'.$discount.'% Off</span></span>';
                 $json['price'] =$price2;
@@ -786,13 +798,13 @@ class Home extends CI_Controller
             if($discount==0)
             {
                 $price1=number_format($old_price);
-                $json['sub']= '<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
+                $json['sub']= '<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price1.' </span>';
                 $json['price'] =$price1;
             }
             else{
                 $price1 = $old_price - ($old_price * $discount / 100);
                 $price2= number_format($price1);
-                $json['sub']='<span class="price-new" style="color: #00e6b8;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
+                $json['sub']='<span class="price-new" style="color: #006400;font-size:14px" id="demo"><i class="fa fa-inr rs-sym"></i> '.$price2.' </span>';
                 $json['sub'] .='<span class="price-old" style="font-size:14px" id="new"><i class="fa fa-inr rs-sym"></i> '.number_format($old_price).'</span>';
                 $json['sub'] .='<span style="font-size:14px"><span class="sale sale-percentage">'.$discount.'% Off</span></span>';
                 $json['price'] =$price2;

@@ -70,7 +70,9 @@ $product_idd= $get_last_record->product_id;
            	<div class="col-md-6">
       		<div class="form-group">
                 <label for="inputDescription">Product Id</label>
-                <input type="text" id="product_id" name="product_id" placeholder="Product Id" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  class="form-control" required value="<?php echo set_value('product_id'); ?>">
+                <input type="text" id="product_id" name="product_id" placeholder="Product Id" 
+                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+                 class="form-control" required value="<?php echo set_value('product_id'); ?>">
                 <span style="color: red;">(Last product id values is : <?php echo $product_idd; ?>)</span></span>
                 <span style="color: red;"><?php echo form_error('product_id'); ?>  </span>
               </div>
